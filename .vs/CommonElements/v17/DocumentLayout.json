@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1119DE-3E7E-47F7-B32C-C8A9B28EA6CD}|CommonElements\\CommonElements.csproj|f:\\year 3 2nd term\\analysis and design of algorithm\\assignments\\assignment 2\\[u] commonitems\\common-items\\commonelements\\problem_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1119DE-3E7E-47F7-B32C-C8A9B28EA6CD}|CommonElements\\CommonElements.csproj|solutionrelative:commonelements\\problem_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1119DE-3E7E-47F7-B32C-C8A9B28EA6CD}|CommonElements\\CommonElements.csproj|F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\commonelements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1119DE-3E7E-47F7-B32C-C8A9B28EA6CD}|CommonElements\\CommonElements.csproj|solutionrelative:commonelements\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1119DE-3E7E-47F7-B32C-C8A9B28EA6CD}|CommonElements\\CommonElements.csproj|F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\commonelements\\ceproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1119DE-3E7E-47F7-B32C-C8A9B28EA6CD}|CommonElements\\CommonElements.csproj|solutionrelative:commonelements\\ceproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CEProblem.cs",
+              "DocumentMoniker": "F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\CommonElements\\CEProblem.cs",
+              "RelativeDocumentMoniker": "CommonElements\\CEProblem.cs",
+              "ToolTip": "F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\CommonElements\\CEProblem.cs",
+              "RelativeToolTip": "CommonElements\\CEProblem.cs",
+              "ViewState": "AQIAAAEBAAAAAAAAAAAAAAYBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T08:08:21.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\CommonElements\\Program.cs",
+              "RelativeDocumentMoniker": "CommonElements\\Program.cs",
+              "ToolTip": "F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\CommonElements\\Program.cs",
+              "RelativeToolTip": "CommonElements\\Program.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T08:08:14.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PROBLEM_CLASS.cs",
+              "DocumentMoniker": "F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\CommonElements\\PROBLEM_CLASS.cs",
+              "RelativeDocumentMoniker": "CommonElements\\PROBLEM_CLASS.cs",
+              "ToolTip": "F:\\Year 3 2nd term\\Analysis and Design of Algorithm\\Assignments\\Assignment 2\\[U] CommonItems\\Common-Items\\CommonElements\\PROBLEM_CLASS.cs",
+              "RelativeToolTip": "CommonElements\\PROBLEM_CLASS.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwEgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T08:08:08.743Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

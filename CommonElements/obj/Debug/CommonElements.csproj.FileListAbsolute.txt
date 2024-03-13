@@ -14,3 +14,10 @@ E:\COURSES\Algorithms\[1] [ALL PROBLEMS - CODE]\UNIFIED OUTPUT\D&C\[U] CommonIte
 E:\COURSES\Algorithms\[1] [ALL PROBLEMS - CODE]\UNIFIED OUTPUT\D&C\[U] CommonItems\[TEMPLATE]\CommonElements\obj\Debug\CommonElements.csproj.CoreCompileInputs.cache
 E:\COURSES\Algorithms\[1] [ALL PROBLEMS - CODE]\UNIFIED OUTPUT\D&C\[U] CommonItems\[TEMPLATE]\CommonElements\obj\Debug\CommonElements.exe
 E:\COURSES\Algorithms\[1] [ALL PROBLEMS - CODE]\UNIFIED OUTPUT\D&C\[U] CommonItems\[TEMPLATE]\CommonElements\obj\Debug\CommonElements.pdb
+F:\Year 3 2nd term\Analysis and Design of Algorithm\Assignments\Assignment 2\[U] CommonItems\Common-Items\CommonElements\bin\Debug\CommonElements.exe.config
+F:\Year 3 2nd term\Analysis and Design of Algorithm\Assignments\Assignment 2\[U] CommonItems\Common-Items\CommonElements\bin\Debug\CommonElements.exe
+F:\Year 3 2nd term\Analysis and Design of Algorithm\Assignments\Assignment 2\[U] CommonItems\Common-Items\CommonElements\bin\Debug\CommonElements.pdb
+F:\Year 3 2nd term\Analysis and Design of Algorithm\Assignments\Assignment 2\[U] CommonItems\Common-Items\CommonElements\obj\Debug\CommonElements.csproj.AssemblyReference.cache
+F:\Year 3 2nd term\Analysis and Design of Algorithm\Assignments\Assignment 2\[U] CommonItems\Common-Items\CommonElements\obj\Debug\CommonElements.csproj.CoreCompileInputs.cache
+F:\Year 3 2nd term\Analysis and Design of Algorithm\Assignments\Assignment 2\[U] CommonItems\Common-Items\CommonElements\obj\Debug\CommonElements.exe
+F:\Year 3 2nd term\Analysis and Design of Algorithm\Assignments\Assignment 2\[U] CommonItems\Common-Items\CommonElements\obj\Debug\CommonElements.pdb
