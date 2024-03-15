@@ -31,88 +31,46 @@ namespace Problem
         {
             //REMOVE THIS LINE BEFORE START CODING
             //throw new NotImplementedException();
-            //if (arr1.Length == 0 || arr2.Length == 0)
-            //{
-            //    return new int[0];
-            //}
-            //else if (arr1.Length == 1 && arr2.Length == 1)
-            //{
-            //    if (arr1[0] == arr2[0])
-            //    {
-            //        return new int[] { arr1[0] };
-            //    }
-            //    else
-            //    {
-            //        return new int[0];
-            //    }
-            //}
-            //else
-            //{
-            //    int mid1 = arr1.Length / 2;
-            //    int mid2 = arr2.Length / 2;
-
-            //    int[] left1 = new int[mid1];
-            //    int[] right1 = new int[arr1.Length - mid1];
-
-            //    Array.Copy(arr1, 0, left1, 0, mid1);
-            //    Array.Copy(arr1, mid1, right1, 0, arr1.Length - mid1);
-
-            //    int[] left2 = new int[mid2];
-            //    int[] right2 = new int[arr2.Length - mid2];
-
-            //    Array.Copy(arr2, 0, left2, 0, mid2);
-            //    Array.Copy(arr2, mid2, right2, 0, arr2.Length - mid2);
-
-            //    int[] commonLeft = RequiredFuntion(left1, left2);
-            //    int[] commonRight = RequiredFuntion(right1, right2);
-            //    int[] commonLeftandRight1 = RequiredFuntion(left1, right2);
-            //    int[] commonLeftandRight2 = RequiredFuntion(left2, right1);
-
-            //    int[] merge = commonLeftandRight1.Concat(commonLeftandRight2).ToArray();
-            //    int[] merge2 = commonLeft.Concat(commonRight).ToArray();
-
-            //    return merge.Concat(merge2).ToArray();
-            //}
-            int[] common = commonitems(arr1, 0, arr1.Length - 1, arr2, 0, arr2.Length - 1);
-            return common;
-        }
-        public static int[] commonitems(int[] array1, int start1, int end1, int[] array2, int start2, int end2)
-        {
-            if (start1 > end1 || start2 > end2)
+            Array.Sort(arr2);
+            int n = arr1.Length;
+            int count = 0;
+            int[]temp = new int[n];
+            int[] commonitems;
+            for (int i = 0; i < n; i++)
             {
-                return new int[0];
+                bool flag = BinarySearch(0, arr2.Length-1, arr1[i], arr2);
+                if (flag)
+                {
+                    
+                    temp[count] = arr1[i];
+                    count++;
+                }
             }
-            else if (start1 == end1 && start2 == end2)
+            commonitems = new int[count];
+            Array.Copy(temp, 0, commonitems, 0, count);
+            return commonitems;
+        }
+        public static bool BinarySearch(int start , int end , int item , int[] array)
+        {
+            if(start > end)
             {
-                if (array1[start1] == array2[start2])
-                {
-                    return new int[] { array1[start1] };
-                }
-                else
-                {
-                    return new int[0];
-                }
+                return false;
             }
             else
             {
-                int mid1 = (start1 + end1) / 2;
-                int mid2 = (start2 + end2) / 2;
-
-
-                int[] commonLeft = commonitems(array1, start1, mid1, array2, start2, mid2);
-                int[] commonRight = commonitems(array1, mid1 + 1, end1, array2, mid2 + 1, end2);
-                int[] commonLeftandRight1 = commonitems(array1, start1, mid1, array2, mid2 + 1, end2);
-                int[] commonLeftandRight2 = commonitems(array1, mid1 + 1, end1, array2, start2, mid2);
-
-                int[] merge = new int[commonLeft.Length + commonRight.Length];
-                int[] merge2 = new int[commonLeftandRight1.Length + commonLeftandRight2.Length];
-
-                Parallel.Invoke(
-                () =>  merge = commonLeftandRight1.Concat(commonLeftandRight2).ToArray(),
-                () =>  merge2 = commonLeft.Concat(commonRight).ToArray()
-                );
-
-                return merge.Concat(merge2).ToArray();
+                int middle = (start + end) / 2;
+                if (item == array[middle])
+                {
+                    return true;
+                }
+                else if (item > array[middle])
+                {
+                    return BinarySearch(middle + 1, end, item, array);
+                }
+                else
+                {
+                    return BinarySearch(start, middle - 1, item, array);
+                }
             }
         }
         #endregion
