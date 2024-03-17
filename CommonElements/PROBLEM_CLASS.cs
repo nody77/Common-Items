@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Problem
 {
@@ -17,6 +18,9 @@ namespace Problem
 
         enum SOLUTION_TYPE { NAIVE, EFFICIENT };
         static SOLUTION_TYPE solType = SOLUTION_TYPE.EFFICIENT;
+
+
+        static Semaphore semaphore = new Semaphore(1,1);
 
         //Your Code is Here:
         //==================
@@ -32,44 +36,45 @@ namespace Problem
             //REMOVE THIS LINE BEFORE START CODING
             //throw new NotImplementedException();
             Array.Sort(arr2);
-            int n = arr1.Length;
-            int count = 0;
-            int[]temp = new int[n];
+            int size_of_array1 = arr1.Length;
+            int number_of_common_item_found = 0;
+            int[]temp = new int[size_of_array1];
             int[] commonitems;
-            for (int i = 0; i < n; i++)
+            Parallel.For(0, size_of_array1, i =>
             {
-                bool flag = BinarySearch(0, arr2.Length-1, arr1[i], arr2);
+                bool flag = BinarySearch(0, arr2.Length - 1, arr1[i], arr2);
                 if (flag)
                 {
-                    
-                    temp[count] = arr1[i];
-                    count++;
+                    semaphore.WaitOne();
+                    temp[number_of_common_item_found] = arr1[i];
+                    number_of_common_item_found++;
+                    semaphore.Release();
                 }
-            }
-            commonitems = new int[count];
-            Array.Copy(temp, 0, commonitems, 0, count);
+            });
+            commonitems = new int[number_of_common_item_found];
+            Array.Copy(temp, 0, commonitems, 0, number_of_common_item_found);
             return commonitems;
         }
-        public static bool BinarySearch(int start , int end , int item , int[] array)
+        public static bool BinarySearch(int start_n , int end_a , int item_d , int[] array_a)
         {
-            if(start > end)
+            if(start_n > end_a)
             {
                 return false;
             }
             else
             {
-                int middle = (start + end) / 2;
-                if (item == array[middle])
+                int middle_of_array = (start_n + end_a) / 2;
+                if (item_d == array_a[middle_of_array])
                 {
                     return true;
                 }
-                else if (item > array[middle])
+                else if (item_d > array_a[middle_of_array])
                 {
-                    return BinarySearch(middle + 1, end, item, array);
+                    return BinarySearch(middle_of_array + 1, end_a, item_d, array_a);
                 }
                 else
                 {
-                    return BinarySearch(start, middle - 1, item, array);
+                    return BinarySearch(start_n, middle_of_array - 1, item_d, array_a);
                 }
             }
         }
